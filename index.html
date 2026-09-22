@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Advanced CSS - Full Stack Lab 2</title>
+<!-- Bootstrap CSS -->
+<link href="assets/bootstrap.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body id="home"><a class="skip-link" href="#profile">Skip to content</a>
+<!-- ================= NAVIGATION BAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<div class="container">
+<a class="navbar-brand" href="#home">
+                Full Stack Lab
+            </a>
+<button aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarMenu" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarMenu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="#home">
+                            Home
+                        </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#profile">
+                            Profile
+                        </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#skills">
+                            Skills
+                        </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#projects">
+                            Projects
+                        </a>
+</li>
+<li class="nav-item"><a class="nav-link" href="#experiments">Experiments</a></li><li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li></ul>
+</div>
+</div>
+</nav>
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section">
+<div class="container">
+<div class="hero-content">
+<div>
+<span class="badge bg-primary">LAB 02 · SECTION C</span>
+<h1>
+                        Advanced CSS &amp; Responsive Design
+                    </h1>
+<p>
+                        Learn Flexbox, positioning, pseudo-elements,
+                        filters and Bootstrap Flex utilities.
+                    </p>
+<a class="btn btn-primary" href="#skills">
+                        Explore Skills
+                    </a>
+</div>
+<div class="profile-image-container">
+<img alt="Student profile" class="profile-image" height="280" src="assets/image-1.jpg" width="280"/>
+<span class="online-badge">
+                        Online
+                    </span>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PROFILE SECTION ================= -->
+<section class="py-5" id="profile">
+<div class="container">
+<div class="section-heading">
+<h2>Student Profile</h2>
+<p>
+                    This section demonstrates advanced CSS layout
+                    and positioning techniques.
+                </p>
+</div>
+<div class="profile-card">
+<h3>Ali Muhammad</h3>
+<p>Roll number: 242759. A student learning modern web development with HTML5, CSS3, Bootstrap and JavaScript.</p>
+<details><summary class="btn btn-success">View Profile</summary><p class="mt-3">Student identifier: AliMuhammad_242759. This portfolio demonstrates flexible layouts, positioning, display modes, pseudo-elements, filters and smooth visual effects.</p></details>
+</div>
+</div>
+</section>
+<!-- ================= SKILLS SECTION ================= -->
+<section class="skills-section py-5" id="skills">
+<div class="container">
+<div class="section-heading">
+<h2>Technical Skills</h2>
+<p>
+                    Skills are arranged using CSS Flexbox.
+                </p>
+</div>
+<!-- CSS Flexbox -->
+<div class="skills-container">
+<div class="skill-box">
+<h4>HTML5</h4>
+<p>Web Page Structure</p>
+</div>
+<div class="skill-box">
+<h4>CSS3</h4>
+<p>Styling and Layout</p>
+</div>
+<div class="skill-box">
+<h4>Bootstrap</h4>
+<p>Responsive UI</p>
+</div>
+<div class="skill-box">
+<h4>JavaScript</h4>
+<p>Web Interactivity</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= PROJECTS SECTION ================= -->
+<section class="py-5" id="projects">
+<div class="container">
+<div class="section-heading">
+<h2>Projects</h2>
+<p>
+                    Demonstration of CSS effects and pseudo-elements.
+                </p>
+</div>
+<div class="project-container">
+<!-- Project 1 -->
+<div class="project-card" id="project-1">
+<div class="project-image">
+<img alt="Web development project" height="400" loading="lazy" src="assets/image-2.jpg" width="600"/>
+</div>
+<h4>Web Development</h4>
+<p>
+                        A responsive website created using HTML5,
+                        CSS3 and Bootstrap.
+                    </p>
+<details><summary class="btn btn-primary">View Project</summary><p class="mt-3">This page is the web development project. Its hero and skills use custom CSS Flexbox, and its navigation uses Bootstrap collapse. Resize the browser to compare desktop and mobile layouts.</p></details>
+</div>
+<!-- Project 2 -->
+<div class="project-card" id="project-2">
+<div class="project-image grayscale">
+<img alt="Programming project" height="400" loading="lazy" src="assets/image-3.jpg" width="600"/>
+</div>
+<h4>Programming Project</h4>
+<p>
+                        A programming project demonstrating
+                        problem solving and software development.
+                    </p>
+<details><summary class="btn btn-primary">View Project</summary><p class="mt-3">The experiment controls below are the programming project. JavaScript updates CSS properties and Bootstrap classes immediately. Reset restores the original lab values.</p></details>
+</div>
+<!-- Project 3 -->
+<div class="project-card" id="project-3">
+<div class="project-image">
+<img alt="Data analysis project" height="400" loading="lazy" src="assets/image-4.jpg" width="600"/>
+</div>
+<h4>Data Project</h4>
+<p>
+                        A project demonstrating data analysis
+                        and visualization techniques.
+                    </p>
+<details><summary class="btn btn-primary">View Project</summary><p class="mt-3">This small data visualization compares the number of skills (4), project cards (3), and lab tasks (7). The values describe this page; they are not external research data.</p><div aria-label="Page counts: 4 skills, 3 projects, 7 tasks" class="mini-chart"><span>Skills · 4</span><meter max="7" min="0" value="4">4</meter><span>Projects · 3</span><meter max="7" min="0" value="3">3</meter><span>Tasks · 7</span><meter max="7" min="0" value="7">7</meter></div></details>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= BOOTSTRAP FLEX SECTION ================= -->
+<section class="bootstrap-flex-section py-5" id="flex-demo">
+<div class="container">
+<div class="section-heading">
+<h2>Bootstrap Flex Utilities</h2>
+<p>
+                    Bootstrap Flex utility classes can be used
+                    without writing custom Flexbox CSS.
+                </p>
+</div>
+<div class="d-flex justify-content-between align-items-center flex-wrap gap-3 bootstrap-demo">
+<div class="flex-item">
+                    HTML5
+                </div>
+<div class="flex-item">
+                    CSS3
+                </div>
+<div class="flex-item">
+                    Bootstrap
+                </div>
+<div class="flex-item">
+                    JavaScript
+                </div>
+</div>
+</div>
+</section>
+<!-- ================= POSITIONING DEMONSTRATION ================= -->
+<section class="position-section py-5" id="positioning">
+<div class="container">
+<div class="section-heading">
+<h2>CSS Positioning</h2>
+<p>
+                    The following card demonstrates
+                    relative and absolute positioning.
+                </p>
+</div>
+<div class="position-card">
+<h3>Positioning Example</h3>
+<p>
+                    This card uses position: relative.
+                    The badge uses position: absolute.
+                </p>
+<span class="featured-badge">
+                    Featured
+                </span>
+</div>
+</div>
+</section>
+<!-- ================= CONTACT ================= -->
+<section class="py-5" id="experiments"><div class="container"><div class="section-heading"><h2>Lab experiments &amp; observations</h2><p>Tasks 1–7 completed. Change a control, then inspect its demonstration above.</p></div><div class="experiment-grid"><article class="experiment"><h3>Task 1 — Flexbox</h3><label for="justify">Select flexbox value</label><select class="form-select my-2" id="justify"><option value="center">center</option><option value="space-between">space-between</option><option value="space-around">space-around</option><option value="space-evenly">space-evenly</option></select><p>With center, unused main-axis space sits before and after the group. Space-between puts it between items, with no additional edge space. Space-around gives each item equal surrounding space, so an interior space is twice an outer space. Space-evenly makes the outer and interior spaces equal. The 20px gap remains a minimum. In the original skills row, flex: 1 1 200px lets items grow and consume spare width, so changing justification may produce little or no visible difference. Enable the fixed-basis comparison to expose the difference.</p><label><input id="fixed-basis" type="checkbox"/> Fixed-basis comparison (turn off flex-grow)</label><a href="#skills">Inspect demonstration ↑</a></article><article class="experiment"><h3>Task 2 — Flex Direction</h3><label for="direction">Select flex direction value</label><select class="form-select my-2" id="direction"><option value="row">row</option><option value="column">column</option></select><p>Column changes the main axis from horizontal to vertical: skill boxes stack from top to bottom, and justify-content acts vertically. Align-items now controls horizontal alignment. Flex-basis: 200px applies along the new vertical main axis, so the boxes can become taller. Returning to row restores the horizontal, wrapping layout.</p><a href="#skills">Inspect demonstration ↑</a></article><article class="experiment"><h3>Task 3 — Positioning</h3><label for="position">Select positioning value</label><select class="form-select my-2" id="position"><option value="absolute">absolute</option><option value="relative">relative</option></select><p>The Online badge is initially removed from normal flow and anchored 15px from the bottom and 10px from the right of its relatively positioned image container. With position: relative, it participates in normal flow after the image and is shifted upward by bottom: 15px and leftward by right: 10px from its own normal position. Its original layout space remains reserved; it no longer anchors to the container’s bottom-right corner.</p><a href="#home">Inspect demonstration ↑</a></article><article class="experiment"><h3>Task 4 — Pseudo-element</h3><label for="pseudo">Select pseudo-element value</label><select class="form-select my-2" id="pseudo"><option value="before">::before</option><option value="after">::after</option></select><p>::before generates content before the element’s actual content and ::after generates it after. However, the supplied label also has position: absolute, top: -12px and left: 25px. Keeping these declarations places both versions at the same visible coordinates. Their generated-content order changes, not their visible location in this example. If absolute positioning and offsets are removed, the before/after order becomes visible in normal flow.</p><a href="#profile">Inspect demonstration ↑</a></article><article class="experiment"><h3>Task 5 — Filter</h3><label for="filter">Select filter value</label><select class="form-select my-2" id="filter"><option value="grayscale(100%)">grayscale(100%)</option><option value="blur(3px)">blur(3px)</option><option value="brightness(70%)">brightness(70%)</option></select><p>Grayscale(100%) removes color. Blur(3px) softens edges and text in the image. Brightness(70%) darkens the original colored image to 70% brightness. Each filter replaces the previous one; they are not combined. The supplied hover rule applies grayscale(0%), so hovering restores the unfiltered colors even after changing the base filter. Move the pointer away to compare the selected filter.</p><a href="#projects">Inspect demonstration ↑</a></article><article class="experiment"><h3>Task 6 — Transform</h3><label for="transform">Select transform value</label><select class="form-select my-2" id="transform"><option value="translateY(-10px)">translateY(-10px)</option><option value="scale(1.05)">scale(1.05)</option></select><p>TranslateY(-10px) lifts the project card by 10px. Scale(1.05) enlarges its width and height by 5% around its center by default. Neither transform changes the surrounding layout space. A 0.3s transition smooths the change; transform defines the change itself. The independent image hover effect still zooms the image to scale(1.08).</p><a href="#projects">Inspect demonstration ↑</a></article><article class="experiment"><h3>Task 7 — Bootstrap Flex</h3><label for="bootstrap">Select bootstrap flex value</label><select class="form-select my-2" id="bootstrap"><option value="between">justify-content-between</option><option value="center">justify-content-center</option><option value="around">justify-content-around</option><option value="evenly">justify-content-evenly</option></select><p>Justify-content-between distributes spare main-axis space between items. Justify-content-center groups them in the center. Justify-content-around gives half-sized outer spaces relative to interior spaces. Justify-content-evenly gives equal edge and interior spaces. D-flex, align-items-center, flex-wrap and gap-3 remain in place. On mobile each item is 100% wide, so horizontal justification differences disappear; compare on a wide viewport.</p><a href="#flex-demo">Inspect demonstration ↑</a></article></div><button class="btn btn-dark mt-4" id="reset" type="button">Reset all experiments</button><p class="mt-2" id="experiment-status" role="status">Original lab values selected.</p><article class="display-lab mt-4"><h3>Display properties experiment</h3><label for="display">Display value on the outlined sample</label><select class="form-select my-2" id="display"><option>flex</option><option>block</option><option>inline</option><option>inline-block</option><option>none</option></select><div class="display-stage">Before <div class="display-demo"><span>A</span><span>B</span><span>C</span></div> After</div><p>Block starts a new line and, with auto width, fills available width. Inline flows with text and ignores explicit width and height. Inline-block flows inline but accepts dimensions. Flex creates a block-level flex container for its children. None removes the sample and its children from layout. The sample’s height is 90px for comparing dimension support.</p></article></div></section><section class="contact-section py-5" id="contact">
+<div class="container text-center">
+<h2>Contact</h2>
+<p>
+                Full Stack Web Development Laboratory
+            </p>
+<details><summary class="btn btn-dark">Contact Us</summary><p class="mt-3">Student: Ali Muhammad · Roll number: 242759<br/>Full Stack Web Development · Section C<br/>Please use the course LMS or your institution’s directory to contact the student or instructor.</p></details>
+</div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+<div class="container text-center">
+<p>© 2026 Full Stack Web Development Lab 2 · AliMuhammad_242759</p>
+</div>
+</footer>
+<!-- Bootstrap JavaScript -->
+<script src="assets/bootstrap.bundle.min.js">
+</script>
+<a aria-label="Back to top" class="back-to-top" href="#home">↑ Top</a><script>
+// Task controls change the original demonstrations without editing source files.
+const $ = selector => document.querySelector(selector);
+const controls = ['justify','direction','position','pseudo','filter','transform','bootstrap','display'];
+function applyExperiments() {
+  $('.skills-container').style.justifyContent = $('#justify').value;
+  $('.skills-container').style.flexDirection = $('#direction').value;
+  $('.skills-container').classList.toggle('fixed-basis', $('#fixed-basis').checked);
+  $('.online-badge').style.position = $('#position').value;
+  $('.profile-card').classList.toggle('label-after', $('#pseudo').value === 'after');
+  document.documentElement.style.setProperty('--project-filter', $('#filter').value);
+  document.documentElement.style.setProperty('--card-transform', $('#transform').value);
+  const demo = $('.bootstrap-demo');
+  ['between','center','around','evenly'].forEach(v => demo.classList.remove('justify-content-' + v));
+  demo.classList.add('justify-content-' + $('#bootstrap').value);
+  $('.display-demo').style.display = $('#display').value;
+  $('#experiment-status').textContent = 'Values applied. Use Inspect demonstration to view the result.';
+}
+controls.forEach(id => $('#' + id).addEventListener('change', applyExperiments));
+$('#fixed-basis').addEventListener('change', applyExperiments);
+$('#reset').addEventListener('click', () => {
+  controls.forEach(id => $('#' + id).selectedIndex = 0);
+  $('#fixed-basis').checked = false;
+  applyExperiments();
+  $('#experiment-status').textContent = 'Original lab values restored.';
+});
+document.querySelectorAll('#navbarMenu a').forEach(link => link.addEventListener('click', () => {
+  if (window.bootstrap && window.innerWidth < 992) bootstrap.Collapse.getOrCreateInstance($('#navbarMenu'), {toggle:false}).hide();
+}));
+</script></body>
+</html>
